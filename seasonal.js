@@ -559,24 +559,3 @@ var App = {
 
 App.init();
 });
-
-
-
-// honeydew
-// put a max width on the img set equal to what it is right now when the phone is in portrait
-// have a large picture on the computer and have the picture be on the left and the info on the right. same with landscape
-
-// link to a video on how to eat?
-// cantaloupe - https://www.youtube.com/watch?v=gpJOV4EzObg
-// grapefruit - https://www.youtube.com/watch?v=1tbf9fGAC10
-// honeydew - https://www.youtube.com/watch?v=gpJOV4EzObg
-// kiwi - https://www.youtube.com/watch?v=i4zq-OidaU4
-// mangos - https://www.youtube.com/watch?v=0OsP1icacOY
-// pineapple - https://www.youtube.com/watch?v=IH7nfHbfHBY
-// pomegranate - https://www.youtube.com/watch?v=ZDIxKjwx9w4
-// watermelon - https://www.youtube.com/watch?v=80BZGvnNZOc
-
-
-// get a better heart for made with <3 by jake tripp
-
-// 
