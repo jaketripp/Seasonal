@@ -1,0 +1,23 @@
+body {
+	margin-top: 40px;
+}
+
+.indentedp {
+  text-indent: calc(30px + 10 * ((100vw - 300px) / (1350 - 300)));
+}
+
+h1 {
+  font-size: 63px;
+  font-size: calc(27px + 36 * ((100vw - 300px) / (1350 - 300)));
+}
+
+.jumbotron p {
+  font-size: 21px;
+  font-size: calc(16px + 10 * ((100vw - 300px) / (1350 - 300)));
+}
+
+footer p {
+  font-size: 14px;
+  font-size: calc(12px + 2 * ((100vw - 300px) / (1350 - 300)));
+  margin: 10px 3%;
+}
