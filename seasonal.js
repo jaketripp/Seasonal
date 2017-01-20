@@ -510,7 +510,7 @@ var App = {
 		  fruitInfo.append('<p><strong>Reasons to eat more ' + fruit + ': </strong>' + fruitData[fruit].health + ' (click link for more info)');
 
 		  // consider redoing how the months in season works maybe using filter?
-		  // should month data actually be in terms of fruit? "kiwi: january true, freburary false" etc? then i could just
+		  // should month data actually be in terms of fruit? "kiwi: january true, freburary false" etc?
 		  
 		  monthsInSeason = [];
 
