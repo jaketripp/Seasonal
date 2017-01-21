@@ -81,12 +81,15 @@ p span {
 }
 
 #about a {
-  padding: 7px;
-  text-decoration: underline;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 #about a:hover {
-  border: 1px solid white;
+  padding: 7px;
+  border: 1px solid #ddd;
   text-decoration: none;
   border-radius: 3px;
   font-weight: bold;
@@ -114,7 +117,7 @@ a, a:hover {
   color: white;
 }
 
-p a {
+#fruits a {
   text-decoration: underline;
 }
 
