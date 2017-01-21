@@ -165,7 +165,7 @@ var monthData = {
 		raspberries: true,
 		strawberries: false,
 		watermelon: true,
-		color: '#BD2D2F'
+		color: '#c0392b'
 	},
 	August: {
 		// deep green
