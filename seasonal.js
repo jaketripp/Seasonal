@@ -460,7 +460,7 @@ jQuery(function ($) {
 var App = {
 	fruits: [],
 	formatDate: function() {
-		document.getElementById('date').innerHTML = month + '<br>' + d.getFullYear();
+		document.getElementById('date').innerHTML = month + '</br>' + d.getFullYear();
 	},
 	changeBackgroundColor: function() {
 		document.body.style.backgroundColor = monthData[month].color;
