@@ -45,7 +45,7 @@ var monthData = {
 		raspberries: false,
 		strawberries: false,
 		watermelon: false,
-		color: '#7A378B'
+		color: '#FF7858'
 	},
 	March: {
 		// emerald green
@@ -189,7 +189,7 @@ var monthData = {
 		raspberries: true,
 		strawberries: false,
 		watermelon: true,
-		color: '#004F16'
+		color: '#004C21'
 	},
 	September: {
 		// pleasant blue
@@ -237,7 +237,7 @@ var monthData = {
 		raspberries: false,
 		strawberries: false,
 		watermelon: false,
-		color: '#FF870F'
+		color: '#f39c12'
 	},
 	November: {
 		// brown
@@ -261,10 +261,10 @@ var monthData = {
 		raspberries: false,
 		strawberries: false,
 		watermelon: false,
-		color: '#AA6422'
+		color: '#A75D00'
 	},
 	December: {
-		// gray
+		// midnight blue
 		apples: true,
 		apricots: false,
 		blackberries: false,
@@ -285,7 +285,7 @@ var monthData = {
 		raspberries: false,
 		strawberries: false,
 		watermelon: false,
-		color: '#77878B'
+		color: '#2c3e50'
 	}
 };
 
@@ -456,8 +456,6 @@ var d = new Date();
 var months = Object.getOwnPropertyNames(monthData);
 var month = months[d.getMonth()];
 
-// fix colors: february, august, october, november, december
-
 jQuery(function ($) {
 var App = {
 	fruits: [],
@@ -510,7 +508,8 @@ var App = {
 		  fruitInfo.append('<p><strong>Reasons to eat more ' + fruit + ': </strong>' + fruitData[fruit].health + ' (click link for more info)');
 
 		  // consider redoing how the months in season works maybe using filter?
-		  // should month data actually be in terms of fruit? "kiwi: january true, freburary false" etc?
+		  // should month data actually be in terms of fruit? "kiwi: january true, february false" etc?
+		  // reorganize structure once you know backend and use a database
 		  
 		  monthsInSeason = [];
 
@@ -539,7 +538,7 @@ var App = {
 	},
 	changeMonth: function() {
 		$('.nav').on('click', 'div', function(e) {
-			month = e.target.id;
+			month = e.target.innerHTML;
 			this.toggleFruitData();
 			this.formatDate();
 			this.changeBackgroundColor();
