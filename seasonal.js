@@ -45,7 +45,7 @@ var monthData = {
 		raspberries: false,
 		strawberries: false,
 		watermelon: false,
-		color: '#FF7858'
+		color: '#FF8D72'
 	},
 	March: {
 		// emerald green
@@ -189,7 +189,7 @@ var monthData = {
 		raspberries: true,
 		strawberries: false,
 		watermelon: true,
-		color: '#004C21'
+		color: '#009440'
 	},
 	September: {
 		// pleasant blue
@@ -460,7 +460,7 @@ jQuery(function ($) {
 var App = {
 	fruits: [],
 	formatDate: function() {
-		document.getElementById('date').innerHTML = month + ' ' + d.getFullYear();
+		document.getElementById('date').innerHTML = month + '<br>' + d.getFullYear();
 	},
 	changeBackgroundColor: function() {
 		document.body.style.backgroundColor = monthData[month].color;
