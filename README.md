@@ -1,5 +1,5 @@
 #Seasonal
-#### Written in JavaScript, HTML, & CSS.
+#### Written in JavaScript, HTML, CSS, Bootstrap, & jQuery.
 
 You can checkout Seasonal [here](https://jaketripp.github.io/Seasonal/ "Seasonal"). Next time you're at the grocery store, pull out your phone and buy fresh fruit with confidence!  
 
@@ -18,7 +18,7 @@ You can checkout Seasonal [here](https://jaketripp.github.io/Seasonal/ "Seasonal
 
 ### Screenshots:
 
-Sample Month             |  Sample Fruit
+September 2017             |  Pineapple
 :-------------------------:|:-------------------------:
 ![September 2017](images/screenshots/seasonal1.png)  |  ![Pineapple info](images/screenshots/seasonal2.png)
 
