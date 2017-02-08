@@ -14,4 +14,4 @@ You can checkout Seasonal [here](https://jaketripp.github.io/Seasonal/ "Seasonal
 
 Sample Month             |  Sample Fruit
 :-------------------------:|:-------------------------:
-![September 2017](../blob/master/images/screenshots/seasonal1.png)  |  ![Pineapple info](../blob/master/images/screenshots/seasonal2.png)
+![September 2017](images/screenshots/seasonal1.png)  |  ![Pineapple info](images/screenshots/seasonal2.png)
