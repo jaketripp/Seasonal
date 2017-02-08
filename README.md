@@ -12,7 +12,7 @@ You can checkout Seasonal [here](https://jaketripp.github.io/Seasonal/). Next ti
  * which months the fruit is in season
  * health benefits of eating the fruit
 
- ###### A sample month and fruit
- ![alt tag](https://github.com/jaketripp/Seasonal/blob/master/images/screenshots/seasonal1.png)
-
- ![alt tag](https://github.com/jaketripp/Seasonal/blob/master/images/screenshots/seasonal2.png)
+###### A sample month and fruit
+Sample Month             |  Sample Fruit
+:-------------------------:|:-------------------------:
+![September 2017](https://github.com/jaketripp/Seasonal/blob/master/images/screenshots/seasonal1.png)  |  ![Pineapple info](https://github.com/jaketripp/Seasonal/blob/master/images/screenshots/seasonal2.png)
