@@ -6,23 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 
-  
+  <script src="lib/jQuery/jQuery-3.2.1.min.js"></script>
+
   <!--   Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
   <!--   Optional theme  -->  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="public/style.css">
   
   <!-- Mobile device homescreen logo -->
   <link rel="apple-touch-icon" href="images/icon.png">
   <link rel="apple-touch-icon-precomposed" href="images/icon.png"/>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
 </head>
 
 <body>
@@ -34,7 +31,6 @@
 		  <div class="header">
   			<h1 id='title'">Seasonal</h1>
   			<h2 id='date'"></h2>	
-
 		  </div>
       
         <div style="clear: left"></div>
@@ -42,13 +38,11 @@
 		  <h4>fresh fruits <em>currently</em> available in Texas:</h4>
       
       <div>
-  		  <ul id="fruits" ></ul>
+  		  <ul id="fruits"></ul>
     	</div>
       
-        <div style="clear: both"></div>
-
       <div id="about">
-  			<p><a href='why.html'>About</a></p>
+  			<p><a href='views/why.html'>About</a></p>
   			<p><span>&copy;</span> 2016 <a href="https://www.linkedin.com/in/jake-tripp" target="_blank">jake tripp</a></p>
   		</div>
       
@@ -72,10 +66,8 @@
     </div>
   </div>    
 </div>		
-		
-		
 
-<script src="seasonal.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>
