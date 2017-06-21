@@ -1,4 +1,4 @@
-#Seasonal
+# Seasonal
 #### Written in JavaScript, HTML, CSS, Bootstrap, & jQuery.
 
 You can checkout Seasonal [here](https://jaketripp.github.io/Seasonal/ "Seasonal"). Next time you're at the grocery store, pull out your phone and buy fresh fruit with confidence!  
