@@ -6,13 +6,13 @@ You can checkout Seasonal [here](https://jaketripp.github.io/Seasonal/ "Seasonal
 - - - - 
 
 ### Features:
-* Easy to use application that assists in buying fresh fruit.
+Easy to use application that assists in buying fresh fruit.
 
-* Provides info such as:
- * the characteristics of an ideal fruit
- * whether the fruit continues to ripen after picked
- * which months the fruit is in season
- * health benefits of eating the fruit
+Provides info such as:
+* the characteristics of an ideal fruit
+* whether the fruit continues to ripen after picked
+* which months the fruit is in season
+* health benefits of eating the fruit
 
 - - - - 
 
