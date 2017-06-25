@@ -273,43 +273,53 @@ function monthsInSeason(fruit){
 	return arr.join(', ');
 }
 
+// constructor function that builds object of stuff to append to DOM
+// takes in an object (fruitData[fruit]) and a string (fruit)
+function DOMFruitData(obj, fruit){
+	this.name = fruit;
+	this.image = '<img src="' + obj.img + '" alt="a picture of ' + fruit + '.">';
+	this.gold = '<p><strong>The Gold Standard:</strong> ' + obj.gold + '</p>';
+	this.tip = '<p><strong>Tip:</strong> ' + obj.tip + '</p>';
+	this.ripens = '<p><strong>Ripens after picked?</strong> ' + obj.ripens + '</p>';
+	this.whenInSeason = '<p><strong>Months in season: </strong>' + monthsInSeason(fruit) + '</p>';
+	this.vid = '<p><strong>How to Prepare: </strong>Click <a href="' + obj.vid + '" target="_blank">HERE</a> to watch a video</p>';
+	this.reasons = '<p><strong>Reasons to eat more ' + fruit + ': </strong> <a href="' + obj.healthLink + '" target="_blank">' + obj.healthDescription + '</a> (click link for more info)';
+}
+
+// handles appending the DOMFruitData to the DOM. takes a selector ($('#' + i + ' div')) and an obj (fruitInfo).
+function appendDataToDOM(selector, obj) {
+	selector.append(obj.image)
+	    	.append(obj.gold);
+
+	if (fruitData[obj.name].tip) {
+		selector.append(obj.tip);
+	}
+
+	selector.append(obj.ripens)
+	       	.append(obj.whenInSeason);
+	       
+	if (fruitData[obj.name].vid) {
+		selector.append(obj.vid);
+	}
+
+	selector.append(obj.reasons);
+}
+
 // renders the fruit list with all the hidden data
 function renderFruitList(){
 	$('#fruits').empty();  
     
     currentMonthFruits.forEach(function(fruit, i, originalArray){
-
     	// append an li with a hidden div
     	$('#fruits').append('<li id="' + i + '">' + fruit + ' <span>▾</span><div class="data" style="display: none"></div></li>');
     	
-    	var currentFruit = $('#' + i + ' div');
+    	// create obj with html to append to DOM
+    	var fruitInfo = new DOMFruitData(fruitData[fruit], fruit);
+    	
+    	var selector = $('#' + i + ' div');
 
-    	// build the strings for the div
-    	var image = '<img src="' + fruitData[fruit].img + '" alt="a picture of ' + fruit + '.">';
-    	var gold = '<p><strong>The Gold Standard:</strong> ' + fruitData[fruit].gold + '</p>';
-    	var tip = '<p><strong>Tip:</strong> ' + fruitData[fruit].tip + '</p>';
-    	var ripens = '<p><strong>Ripens after picked?</strong> ' + fruitData[fruit].ripens + '</p>';
-    	var whenInSeason = '<p><strong>Months in season: </strong>' + monthsInSeason(fruit) + '</p>';
-    	var vid = '<p><strong>How to Prepare: </strong>Click <a href="' + fruitData[fruit].vid + '" target="_blank">HERE</a> to watch a video</p>';
-    	var reasons = '<p><strong>Reasons to eat more ' + fruit + ': </strong> <a href="' + fruitData[fruit].healthLink + '" target="_blank">' + fruitData[fruit].healthDescription + '</a> (click link for more info)';
-
-    	// append the strings
-    	currentFruit.append(image)
-		    		.append(gold);
-
-		if (fruitData[fruit].tip) {
-			currentFruit.append(tip);
-		}
-
-		currentFruit.append(ripens)
-		       		.append(whenInSeason);
-		       
-		if (fruitData[fruit].vid) {
-			currentFruit.append(vid);
-		}
-
-		currentFruit.append(reasons);
-    
+    	// append the data 
+    	appendDataToDOM(selector, fruitInfo);    
     });
 }
 
